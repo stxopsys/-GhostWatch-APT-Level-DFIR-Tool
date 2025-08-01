@@ -4,6 +4,9 @@
 
 Made to operate like an operator.
 
+🚨 Warning: GhostWatch is extremely sensitive — capable of detecting live stealth operations, red team tooling, and advanced malware techniques in memory. Use with precision. Results may expose activity others miss.
+
+
 ---
 
 ## ⚙️ Features
