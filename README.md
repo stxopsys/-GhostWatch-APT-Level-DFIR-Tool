@@ -38,10 +38,16 @@ For triage, it supports plug-and-run execution from external drives or live fore
 
 Operator-grade output. Clean, readable, exportable. 
 
-## 🔬 Authors
-Developed by <starls/>
-Released under Larking Labs (2025)
-Part of the Advanced BlueOps Arsenal
+---
 
-GhostWatch doesn’t scan — it hunts.
-Built for those who track what others ignore.
+### 🔬 Authorship
+
+- **Developed by:** `<starls/>`  
+- **Released under:** Larking Labs project (2025)  
+- **Division:** Advanced BlueOps Initiative
+
+Released under the Larking Labs project (2025)
+
+Part of the Advanced BlueOps Initiative
+
+
