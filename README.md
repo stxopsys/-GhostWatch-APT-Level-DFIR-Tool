@@ -1,59 +1,47 @@
 # 🛰️ GhostWatch – APT-Level DFIR Tool
 
-**GhostWatch** is a surgical detection tool designed to uncover high-level stealth techniques such as section ghosting, remote thread injections, and virtual memory tampering — often missed by traditional scanners.
+🚨 **Warning**: This tool is highly sensitive — capable of flagging red team implants, stealth APT activity, and advanced memory tampering in real time. Use with surgical intent. Results may reveal what others can't even see.
 
-Made to operate like an operator.
+**GhostWatch** is an operator-grade forensic scanner engineered to expose evasive techniques like section ghosting, remote thread injection, and syscall-level memory tampering — the kind of stuff that slips past antivirus and EDR.
 
-🚨 Warning: GhostWatch is extremely sensitive — capable of detecting live stealth operations, red team tooling, and advanced malware techniques in memory. Use with precision. Results may expose activity others miss.
-
+Built to operate like an operator.  
+No fluff. No GUI. Just pure telemetry.
 
 ---
 
 ## ⚙️ Features
 
-- 🔍 Live detection of:
-  - Suspicious memory mappings (e.g. RWX, erased headers)
-  - Section ghosting & Doppelganging indicators
-  - Remote thread injection (CreateRemoteThread)
-  - Syscall-based memory tampering (NtWriteVirtualMemory)
-- 🧠 ETW-based syscall tracing
-- 💾 No install – portable, no footprint
-- 🦾 Operates under pressure — handles large environments in real-time
+- 🔍 **Live detection of:**
+  - RWX mappings, erased PE headers, and unbacked memory
+  - Section ghosting & Doppelganging artifacts
+  - Remote thread injection via `CreateRemoteThread`
+  - Direct syscall tampering (`NtWriteVirtualMemory`, etc.)
+- 📡 **ETW tracing** with syscall-level event capture
+- 🧳 **Portable** – run from USB, no installation or footprint
+- 🦾 **Hardened** – reliable under load, even in high-noise environments
 
 ---
 
 ## 🧪 Usage
 
-Run as Administrator to monitor all processes:
+Run as Administrator to capture full telemetry:
 
+```bash
 GhostWatch.exe
 
-For triage, it can be executed from USB or live forensics environments with no setup.
+For triage, it supports plug-and-run execution from external drives or live forensic OS environments.
 
----
-
-## 🧷 Output Example
-
+📤 Output Example
 [!] Suspicious mapping: PID 2084 [brave.exe]
 [*] ALERT: Section creation detected (PID 2436)
 [+] Event: CreateRemoteThread in PID 3421
 [+] NtWriteVirtualMemory → PID 1324
+Operator-grade output. Clean, readable, exportable.
 
+🔬 Authors
+Developed by <starls/>
+Released under Larking Labs (2025)
+Part of the Advanced BlueOps Arsenal
 
-Clean. Readable. Operator-ready.
-
----
-
-## 🔬 Authors
-
-Developed by `<starls/>`
-
-Released under **Larking Labs (2025)**  
-Part of the **Advanced BlueOps Arsenal**
-
----
-
-> GhostWatch doesn't scan — it hunts.  
-> No GUI. No noise. Just truth.
-
-
+GhostWatch doesn’t scan — it hunts.
+Built for those who track what others ignore.
