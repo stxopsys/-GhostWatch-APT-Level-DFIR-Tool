@@ -24,7 +24,7 @@ It does **not** detect process Doppelgänging — focus is strictly on thread hi
 
 Run as Administrator to capture full telemetry:
 
-```bash
+
 GhostWatch.exe
 
 For triage, it supports plug-and-run execution from external drives or live forensic OS environments. ```
