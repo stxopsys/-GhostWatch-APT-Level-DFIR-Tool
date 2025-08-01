@@ -36,7 +36,12 @@ For triage, it supports plug-and-run execution from external drives or live fore
 [+] Event: CreateRemoteThread in PID 3421
 [+] NtWriteVirtualMemory → PID 1324
 
-Operator-grade output. Clean, readable, exportable.
+Operator-grade output. Clean, readable, exportable. 
 
+## 🔬 Authors
+Developed by <starls/>
+Released under Larking Labs (2025)
+Part of the Advanced BlueOps Arsenal
 
-
+GhostWatch doesn’t scan — it hunts.
+Built for those who track what others ignore.
